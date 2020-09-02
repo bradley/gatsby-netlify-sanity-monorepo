@@ -11,7 +11,7 @@
     "node": "14.7.0"
   },
   "scripts": {
-    "build": "gatsby build && mkdir -p ../../dist/; mv public $_/web",
+    "build": "gatsby build && mkdir -p ../../dist/; mv public ../../dist/web",
     "dev": "gatsby develop",
     "prebuild": "npm install",
     "test": "echo \"Info: no test specified for web\" && exit 1"

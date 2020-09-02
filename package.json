@@ -2,7 +2,7 @@
   "private": true,
   "name": "gatsby-netlify-sanity-monorepo",
   "scripts": {
-    "build": "npm-run-all --parallel build:studio build:web",
+    "build": "npm run build:studio && npm run build:web",
     "build:studio": "cd lib/studio && npm run build",
     "build:web": "cd lib/web && npm run build",
     "dev": "npm-run-all --parallel dev:studio dev:web",
@@ -12,7 +12,7 @@
     "prebuild:studio": "cd lib/studio && npm run prebuild",
     "prebuild:functions": "netlify-lambda install functions",
     "prebuild:web": "cd lib/web && npm run prebuild",
-    "test": "npm-run-all --parallel test:studio test:web",
+    "test": "npm run test:studio && npm run test:web",
     "test:studio": "cd lib/studio && npm run test",
     "test:web": "cd lib/web && npm run test"
   },

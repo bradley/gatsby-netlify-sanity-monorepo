@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "api:deploy": "sanity graphql deploy",
-    "build": "sanity build ../../dist/studio/",
+    "build": "sanity build ../../dist/studio/ -y",
     "dev": "sanity start",
     "prebuild": "sanity install",
     "test": "sanity check"
