@@ -44,7 +44,7 @@
 # Handle redirect to main `app` entrypoint for paths to any root, `/*`, content.
 [[redirects]]
   from = "/*"
-  to = "/web/index.html"
+  to = "/web/:splat"
   status = 200
   force = false
 

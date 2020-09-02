@@ -100,18 +100,23 @@ If you were to run `npm build` from the root directory of this codebase, both th
 # Handle redirect to `admin` entrypoint for paths to `/admin/*` content.
 [[redirects]]
   from = "/admin/*"
-  to = "/studio/index.html"
+  to = "/studio/:splat"
   status = 200
   force = false
 
 # Handle redirect to main `app` entrypoint for paths to any root, `/*`, content.
 [[redirects]]
   from = "/*"
-  to = "/web/index.html"
+  to = "/web/:splat"
   status = 200
   force = false
 ```
 
 ## Deployment
 Deployment is handled using the standard Netlify workflow. Build commands and other configurations can be viewed in `netlify.toml`.
+
+Once your GitHub repo is connected to Netlify (or once you've set up an alternative Netlify deployment approach), the app should deploy without issue. However, given we are wanting to - again - access the Sanity CMS from our custom domain, you will need to perform the final step of telling Sanity to accept requests from the URL of your app on Netlify for production. This is pretty much the same step as step 6 in the Install steps from earlier, and follows Sanity's [guidlines](https://www.sanity.io/docs/cors) for custom deployments.
+
+Go to `https://manage.sanity.io/projects/<YOUR PROJECT ID>/settings/api` and click `Add New Origin` and add the custom domain for your Netlify site (e.g.; `https://foo-bar-123.netlify.app`), being sure to also toggle the `Allow Credentials` option to `true` before saving. You'll only have to do this once, unless you change the domain in the future.
+
 
