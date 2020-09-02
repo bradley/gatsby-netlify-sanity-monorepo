@@ -112,6 +112,8 @@ If you were to run `npm build` from the root directory of this codebase, both th
   force = false
 ```
 
+NOTE: This hasn't currently been properly set up for redirects with [gatsby-netlify-plugin](https://www.gatsbyjs.com/plugins/gatsby-plugin-netlify/), so YMMV, and the redirects for `/web` will need to be updated from here.
+
 ## Deployment
 Deployment is handled using the standard Netlify workflow. Build commands and other configurations can be viewed in `netlify.toml`.
 
