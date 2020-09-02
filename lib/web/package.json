@@ -1,0 +1,27 @@
+{
+  "name": "gatsby-netlify-sanity-monorepo-web",
+  "description": "",
+  "version": "0.0.1",
+  "authors": [
+    "(bradley <bradley.j.griffith@gmail.com>)"
+  ],
+  "main": "app.js",
+  "private": true,
+  "engines": {
+    "node": "14.7.0"
+  },
+  "scripts": {
+    "build": "gatsby build && mkdir -p ../../dist/; mv public $_/web",
+    "dev": "gatsby develop",
+    "prebuild": "npm install",
+    "test": "echo \"Info: no test specified for web\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^2.24.53",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^1.0.5"
+  }
+}

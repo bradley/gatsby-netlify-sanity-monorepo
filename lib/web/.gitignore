@@ -1,0 +1,32 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Diagnostic Reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime Data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency Directories
+node_modules/
+
+# Optional NPM Cache Directory
+.npm
+
+# Optional REPL History
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv Environment Variables File
+.env
+
+# gatsby files
+.cache/
+public
