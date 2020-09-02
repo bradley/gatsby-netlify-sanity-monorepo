@@ -39,7 +39,7 @@ This codebase was developed using version `2.47.0` of `netlify-cli` and version 
 As stated earlier, we use [Netlify Dev](https://www.netlify.com/products/dev/) to run the application in development. To start both the Sanity CMS and the user-facing app simulateously, run:
 
 ```
-npm run dev
+netlify dev
 ```
 
 After this starts, your user-facing app will be available on `http://localhost:8888` and your Sanity CMS will be available at `http://localhost:8888/admin`.
