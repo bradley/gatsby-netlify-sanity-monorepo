@@ -37,7 +37,7 @@
 # Handle redirect to `admin` entrypoint for paths to `/admin/*` content.
 [[redirects]]
   from = "/admin/*"
-  to = "/studio/index.html"
+  to = "/studio/:splat"
   status = 200
   force = false
 
