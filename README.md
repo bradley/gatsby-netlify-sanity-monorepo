@@ -2,7 +2,7 @@
 Example application supporting the development and deployment of a Gatsby frontend with a Sanity CMS, both on the same domain.
 
 ## Background
-The Sanity CMS is developed and deployed as existing on its own domain, whether in development (via Sanity's development server, running on a separate port from Gatsby's) or in production (via Sanity's hosting service, running on a separate URL from the web app itself).
+The Sanity CMS is commonly developed and deployed on its own domain, separate from the frontend it supports.
 
 In this setup we show how to configure your base Sanity and Gatsby environments to run simultaneously on the same domain. In development, you will access your CMS from `http://localhost:8080/admin`, where `http://localhost:8080` is the address of the user-facing app itself. Likewise, in production you will access your CMS from `http://my-app.com/admin`, where `http://my-app.com` is the domain of the app itself.
 
